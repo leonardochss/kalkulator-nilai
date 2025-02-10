@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Nilai Mata Kuliah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Kalkulator Nilai Mata Kuliah</h2>
+        <input type="text" id="mataKuliah" placeholder="Nama Mata Kuliah">
+        <input type="number" id="uts" placeholder="Nilai UTS">
+        <input type="number" id="uas" placeholder="Nilai UAS">
+        <input type="number" id="tugas" placeholder="Nilai Tugas">
+        <input type="number" id="quiz" placeholder="Nilai Quiz">
+        <input type="number" id="proyek" placeholder="Nilai Proyek">
+        <input type="number" id="partisipatif" placeholder="Nilai Partisipatif">
+        <input type="number" id="bobotUts" placeholder="Bobot UTS (0-100)">
+        <input type="number" id="bobotUas" placeholder="Bobot UAS (0-100)">
+        <input type="number" id="bobotTugas" placeholder="Bobot Tugas (0-100)">
+        <input type="number" id="bobotQuiz" placeholder="Bobot Quiz (0-100)">
+        <input type="number" id="bobotProyek" placeholder="Bobot Proyek (0-100)">
+        <input type="number" id="bobotPartisipatif" placeholder="Bobot Partisipatif (0-100)">
+        <button onclick="hitungNilai()">Hitung Nilai</button>
+        <div class="result" id="hasil"></div>
+        <button onclick="toggleHistory()">Tampilkan Riwayat</button>
+        <div class="history-container" id="history-container">
+            <h3>Riwayat Perhitungan</h3>
+            <div class="history" id="history"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
